@@ -1,0 +1,280 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1766,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/fanya/w/css"
+	],
+	"file_history":
+	[
+		"/Users/fanya/w/css/code/冥王星/index.html",
+		"/Users/fanya/w/css/code/冥王星/css.sublime-project",
+		"/Users/fanya/.ssh/known_hosts",
+		"/Users/fanya/workspace/fengchaoli_frontend/node_modules/.0.0.3@rc-editor-plugin-image/node_modules/rc-editor-core/node_modules/draft-js/node_modules/fbjs/node_modules/core-js/library/modules/$.typed-array.js",
+		"/Users/fanya/.ShadowsocksX/gfwlist.js",
+		"/Users/fanya/w/test/index.html",
+		"/Users/fanya/workspace/fengchaoli_frontend/src/components/Form/GoodsListTable/index.js",
+		"/Users/fanya/workspace/fengchaoli_frontend/src/views/Main/Enterprise/Staff/linkInvitation.js",
+		"/Users/fanya/w/test/koa-demos/demos/12.js",
+		"/Users/fanya/phpweb/del/index.html",
+		"/Users/fanya/w/test/koa-demos/demos/11.js",
+		"/Users/fanya/w/test/koa-demos/demos/08.js",
+		"/Users/fanya/w/test/koa-demos/node_modules/accepts/package.json",
+		"/Users/fanya/w/g/react-simple-lazyload-component/src/index.js",
+		"/Users/fanya/w/g/react-simple-lazyload-component/src/reactLazyloadComponent.js",
+		"/Users/fanya/w/g/react-simple-lazyload-component/src/index.css",
+		"/Users/fanya/w/g/react-simple-lazyload-component/src/content.js",
+		"/Users/fanya/w/g/react-simple-lazyload-component/src/App.js",
+		"/Users/fanya/w/g/rect-line-clamp/src/index.js",
+		"/Users/fanya/w/g/react-simple-lazyload-component/yarn.lock",
+		"/Users/fanya/w/g/react-simple-lazyload-component/src/component.js",
+		"/Users/fanya/w/g/react-simple-lazyload-component/src/registerServiceWorker.js",
+		"/Users/fanya/w/g/rect-line-clamp/src/App.js",
+		"/Users/fanya/w/g/rect-line-clamp/package.json",
+		"/Users/fanya/w/www/funya/API-scss/jquery→js.html",
+		"/Users/fanya/w/g/doc/jquery→js.html",
+		"/Users/fanya/Downloads/jquery.textSearch-1.0.js",
+		"/Users/fanya/w/g/learn-flex/webpack.config.js",
+		"/Users/fanya/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/fanya/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/fanya/workspace/fengchaoli_admin_frontend/node_modules/antd/lib/auto-complete/InputElement.d.ts",
+		"/Users/fanya/workspace/fengchaoli_frontend/node_modules/.8.3.3@rc-calendar/package.json",
+		"/Users/fanya/w/js/code/format/format.js",
+		"/Users/fanya/w/js/code/is/is.js",
+		"/Users/fanya/w/js/code/format/index.html",
+		"/Users/fanya/w/js/code/is/index.html",
+		"/Users/fanya/w/js/code/funObject/funObject.js",
+		"/Users/fanya/w/js/lib/style.css",
+		"/Users/fanya/w/js/index.html",
+		"/Users/fanya/w/js/code/historyBack/back.html",
+		"/Users/fanya/w/js/code/historyBack/index.html",
+		"/Users/fanya/w/js/code/detectWebp/index.html",
+		"/Users/fanya/w/js/code/format/ff.js",
+		"/Users/fanya/w/js/code/format/sort.js",
+		"/Users/fanya/w/js/code/sort/sort.js",
+		"/Users/fanya/w/js/code/ff/index.html",
+		"/Users/fanya/w/js/code/historyBack/historyBack.js",
+		"/private/etc/apache2/httpd.conf",
+		"/Library/WebServer/Documents/index.html.en",
+		"/Users/fanya/.aria2/aria2.conf",
+		"/Users/fanya/.aria2/aria2.conf副本",
+		"/Users/fanya/workspace/fengchaoli-platform/html/package.json",
+		"/Applications/Navicat Premium.app/Contents/MacOS/libPYG.dylib",
+		"/Users/fanya/Downloads/aria2.conf"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								501
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 67.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "css.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"applyf",
+				"src/views/Main/ApplyFinancing/index.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/w/js/js.sublime-project"
+			],
+			[
+				"css",
+				"~/w/css/css.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

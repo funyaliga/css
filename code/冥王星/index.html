@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>冥王星</title>
+<style>
+body{
+	background: #202C5D;
+}
+#pluto{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	background-color: #E7B282;
+	background: url("../../img/pluto.jpg") repeat;
+	background-size: 200%;
+	border-radius: 50%;
+	-webkit-animation: pluto 4s linear infinite;
+	animation: pluto 4s linear infinite;
+	box-shadow: -15px -5px 0 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+@keyframes pluto {
+	from { background-position: 0 0; }
+	to { background-position: 200% 0; }
+}
+@-webkit-keyframes pluto {
+	from { background-position: 0 0; }
+	to { background-position: 200% 0; }
+}
+</style>
+</head>
+<body>
+<div id="pluto"></div>
+</body>
+</html>

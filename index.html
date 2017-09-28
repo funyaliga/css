@@ -12,12 +12,26 @@
         overflow: hidden;
     }
     .row{
-    	position: relative;
+        position: relative;
         float: left;
-    	width: 25%;
-    	height: 33.33vh;
-    	min-width: 320px;
-    	border: 1px solid #3B3B3B;
+        width: 25%;
+        height: 33.33vh;
+        border: 1px solid #3B3B3B;
+    }
+    @media screen and (max-width: 1280px) {
+        .row {
+            width: 33%;
+        }
+    }
+    @media screen and (max-width: 960px) {
+        .row {
+            width: 50%;
+        }
+    }
+    @media screen and (max-width: 640px) {
+        .row {
+            width: 100%;
+        }
     }
     .row:hover h3{
     	background: #333;
@@ -55,6 +69,7 @@ new Vue({
     el: '#app',
     data: {
         list: [
+            {name: '冥王星', url: 'code/冥王星'},
         ]
     },
     components: {
