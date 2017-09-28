@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Css笔记</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <style>
+    #app{
+        overflow: hidden;
+    }
+    .row{
+    	position: relative;
+        float: left;
+    	width: 25%;
+    	height: 33.33vh;
+    	min-width: 320px;
+    	border: 1px solid #3B3B3B;
+    }
+    .row:hover h3{
+    	background: #333;
+    }
+    h3{
+    	position: absolute;
+    	top: 0; left: 0; right: 0;
+    	background: #3B3B3B;
+    	text-align: center;
+    	line-height: 26px;
+    	font-size: 13px;font-weight: normal;
+    	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    }
+    a{
+    	color: #fff;
+    	text-decoration: none;
+    }
+    iframe{
+    	width: 100%; height: 100%; padding-top: 25px;
+    }
+    @media screen and (max-width: 480px){
+    	div{
+    		width: 100%;
+    	}
+    }
+    </style>
+</head>
+<body>
+<div id="app">
+    <row v-for="v in list" :url=v.url+"/index.html" :name=v.name></row>
+</div>
+<script src="lib/vue.js"></script>
+<script>
+new Vue({
+    el: '#app',
+    data: {
+        list: [
+        ]
+    },
+    components: {
+        'row': {
+            props: {
+                url: String,
+                name: String,
+            },
+            template: ' \
+                <div class="row"> \
+                    <h3><a href="{{url}}" target="_blank">{{name}}</a></h3> \
+                    <iframe src="{{url}}" ></iframe> \
+                </div> \
+            '
+        }
+    }
+})
+</script>
+</body>
+</html>
