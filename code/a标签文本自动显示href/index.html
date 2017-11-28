@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>a标签文本自动显示href</title>
+
+    <link rel="stylesheet" href="../lib/style.css">
+
+    <style>
+        a[href^="http"]:empty::before {
+            content: attr(href);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            有text: <a href="http://www.douban.com">文字</a>
+        </li>
+        <li>
+            无text: <a href="http://www.douban.com"></a>
+        </li>
+    </ul>
+</body>
+
+</html>
