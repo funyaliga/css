@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局</title>
+    <link rel="stylesheet" href="../../lib/style.css">
+    <link rel="stylesheet" href="../../lib/prism.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section>
+    <h4>左 - 右</h4>
+    <section>
+        <iframe class="example z-s" src="./demo0-1.html"></iframe>
+        <pre><code class="language-css">
+main{
+    display: flex;
+}
+.l{
+    flex: auto;
+}
+        </code></pre>
+    </section>
+
+    <section>
+        <iframe class="example z-s" src="./demo0-2.html"></iframe>
+        <pre><code class="language-css">
+main{
+    display: flex;
+}
+.l{
+}
+.r{
+    margin-left: auto;
+}
+        </code></pre>
+    </section>
+
+    <section>
+        <iframe class="example z-m" src="./demo0-3.html"></iframe>
+        <pre><code class="language-css">
+main{
+    display: flex;
+}
+.l{
+    display: block;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.r{
+    flex: none;
+}
+
+// 或者设置 min-width: 0
+// https://www.w3.org/TR/css-flexbox-1/#min-size-auto
+// overflow为visible，最小宽度为内容宽度，所以要么改变overflow，要么设置min-width
+main{
+    display: flex;
+}
+.l{
+    display: block;
+    min-width: 0;
+    word-wrap: break-word;
+}
+        </code></pre>
+    </section>
+</section>
+
+<section>
+    <h4>上-中(自适应)-下</h4>
+    <iframe class="example" src="./demo1.html"></iframe>
+    <pre><code class="language-css">
+main{
+    display: flex;
+    flex-direction: column;
+}
+article{
+    flex: auto;
+}
+    </code></pre>
+</section>
+
+<section>
+    <h4>上-中[左-右(自适应)]-下</h4>
+    <iframe class="example" src="./demo2.html"></iframe>
+    <pre><code class="language-css">
+main{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex: auto;
+}
+aside{
+    width: 100px;
+}
+article{
+    flex: auto;
+}           
+    </code></pre>
+</section>
+
+<section>
+    <h4>左-右[上-中(自适应)-下]</h4>
+    <iframe class="example" src="./demo3.html"></iframe>
+    <pre><code class="language-css">
+main{
+    display: flex;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+aside{
+    width: 100px;
+}
+article{
+    flex: auto;
+}           
+    </code></pre>
+</section>
+
+<script src="../../lib/prism.js"></script>
+</body>
+</html>

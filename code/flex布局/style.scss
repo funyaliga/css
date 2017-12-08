@@ -1,0 +1,154 @@
+html, body{
+    max-width: 640px;
+    margin: 0 auto;
+}
+body > section{
+    margin: 10px 0;
+    & > section{
+        margin-bottom: 40px;
+    }
+}
+pre[class*="language-"]{
+    margin: 0;
+}
+.example{
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #eee;
+    &.z-s{
+        height: 40px;
+    }
+    &.z-m{
+        height: auto;
+    }
+}
+
+main{
+    min-height: 100vh;
+}
+
+header,
+article,
+aside,
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+header,
+footer{
+    min-height: 50px;
+    background: #56A7A7;
+    opacity: .8;
+}
+aside{
+    background: #A0DBDB;
+}
+article{
+    background: #71C9CE;
+}
+
+.l,
+.r{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 4px 6px;
+    color: #fff;
+}
+.l{
+    background: #56A7A7;
+}
+.r{
+    background: #71C9CE;
+}
+
+#demo0-1{
+    main{
+        display: flex;
+    }
+    .l{
+        flex: auto;
+    }
+}
+#demo0-2{
+    main{
+        display: flex;
+    }
+    .l{
+    }
+    .r{
+        margin-left: auto;
+    }
+}
+#demo0-3{
+    main{
+        display: flex;
+    }
+    .l{
+        display: block;
+        word-wrap: break-word;
+        overflow: hidden;
+        font-size: 18px;
+    }
+    .r{
+        flex: none;
+    }
+}
+// #demo0-3{
+//     main{
+//         display: flex;
+//     }
+//     .l{
+//         display: block;
+//         min-width: 0;
+//         word-wrap: break-word;
+//     }
+//     .r{
+//     }
+// }
+
+#demo1{
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    article{
+        flex: auto;
+    }
+}
+#demo2{
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        display: flex;
+        flex: auto;
+    }
+    aside{
+        width: 100px;
+    }
+    article{
+        flex: auto;
+    }
+}
+#demo3{
+    main{
+        display: flex;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+    }
+    aside{
+        width: 100px;
+    }
+    article{
+        flex: auto;
+    }
+}
