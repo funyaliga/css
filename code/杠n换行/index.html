@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>杠N换行</title>
+    <link rel="stylesheet" href="../../lib/style.css">
+    <style>
+        #app{
+            margin: 10px auto;
+            max-width: 320px;
+            font-size: 16px;
+        }
+        #app textarea{
+            width: 100%;
+            padding: 10px;
+            height: 100px;
+            font-size: 14px;
+        }
+        #app div{
+            margin: 10px 0;
+            padding: 4px 6px;
+            border: 1px dotted #f7f7f7;
+        }
+        #app p{
+            padding: 4px 12px;
+            background: #f7f7f7;
+        }
+        #app em{
+            font-size: 13px;
+            padding: 0 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <textarea v-model="textareaVal"></textarea>
+    <div>
+        <h4>正常情况：</h4>
+        <p>{{ textareaVal }}</p>
+    </div>
+    <div>
+        <h4>white-space: pre;<em>( \n才换行，超过盒子不换 )</em></h4>
+        <p style="white-space: pre;">{{ textareaVal }}</p>
+    </div>
+    <div>
+        <h4>white-space: pre-line;</h4>
+        <p style="white-space: pre-line;">{{ textareaVal }}</p>
+    </div>
+</div>
+
+<script src="../../lib/vue.js"></script>
+<script>
+new Vue({
+    el: '#app',
+    data: {
+        textareaVal: '有志者、事竟成，破釜沉舟，百二秦关终属楚；\n苦心人、天不负，卧薪尝胆，三千越甲可吞吴。 ',
+    }
+})
+</script>
+
+</body>
+</html>
