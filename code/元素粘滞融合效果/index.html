@@ -99,6 +99,10 @@
                 transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
             }
         }
+
+        a[href^="http"]:empty:before {
+            content: attr(href)
+        }
     </style>
 </head>
 
@@ -126,6 +130,9 @@
             3
         </span>
     </div>
+
+    
+    <a href="http://www.zhangxinxu.com/wordpress/2017/12/svg-filter-fuse-gooey-effect/"></a>
 </body>
 
 </html>
