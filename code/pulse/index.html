@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pulse</title>
+    <link rel="stylesheet" href="../../lib/style.css">
+    <style>
+        .box{
+            margin: 80px;
+        }
+        .pulse{
+            position: relative;
+        }
+        .pulse,
+        .pulse:before,
+        .pulse:after{
+            width: 150px;
+            height: 150px;
+            background-color: black;
+            border-radius: 75px;
+        }
+        .pulse:before,
+        .pulse:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform: scale(0.2);
+            transform-origin: center center;
+            animation: pulse 3s linear infinite;
+        }
+        .pulse:after{
+            animation-delay: 2s;
+        }
+        @keyframes pulse {
+            0%   { opacity: 0; transform: scale(0.2); }
+            50%  { opacity: 0.1;  }
+            70%  { opacity: 0.09; }
+            100% { opacity: 0; transform: scale(2); }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="pulse round">
+        </div>
+    </div>
+</body>
+</html>
