@@ -109,3 +109,74 @@ body {
 
 
 
+<style>
+:root {
+  --r: 60px;
+  --bd: 2px;
+}
+.shadow-bd{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((var(--r) + var(--bd)) * 2);
+  height: calc((var(--r) + var(--bd)) * 2);
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+}
+.shadow-bd .in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(var(--r) * 2);
+  height: calc(var(--r) * 2);
+  border-radius: 50%;
+  box-shadow: var(--r) calc(var(--r) * -1) 0 var(--bd) #000,
+              calc(var(--r) * -1) calc(var(--r) * -1) 0 var(--bd) #000,
+              calc(var(--r) * -1) var(--r) 0 var(--bd) #000,
+              var(--r) var(--r) 0 var(--bd) #000;
+}
+
+.shadow-bd .in:hover {
+  animation: border .5s ease forwards;
+}
+
+@keyframes border{
+  0% {
+    box-shadow: var(--r) calc(var(--r) * -1) 0 var(--bd) #000,
+                calc(var(--r) * -1) calc(var(--r) * -1) 0 var(--bd) #000,
+                calc(var(--r) * -1) var(--r) 0 var(--bd) #000,
+                var(--r) var(--r) 0 var(--bd) #000,
+                0 0 0 var(--bd) transparent;
+  }
+  25% {
+    box-shadow: 0 calc((var(--r) + var(--bd)) * -2) 0 var(--bd) #000,
+                calc(var(--r) * -1) calc(var(--r) * -1) 0 var(--bd) #000,
+                calc(var(--r) * -1) var(--r) 0 var(--bd) #000,
+                var(--r) var(--r) 0 var(--bd) #000,
+                0 0 0 var(--bd) red;
+  }
+  50% {
+    box-shadow: 0 calc((var(--r) + var(--bd)) * -2) 0 var(--bd) #000,
+                calc((var(--r) + var(--bd)) * -2) 0px 0 var(--bd) #000,
+                calc(var(--r) * -1) var(--r) 0 var(--bd) #000,
+                var(--r) var(--r) 0 var(--bd) #000,
+                0 0 0 var(--bd) red;
+  }
+  75% {
+    box-shadow: 0 calc((var(--r) + var(--bd)) * -2) 0 var(--bd) #000,
+                calc((var(--r) + var(--bd)) * -2) 0px 0 var(--bd) #000,
+                0px calc((var(--r) + var(--bd)) * 2) 0 var(--bd) #000,
+                var(--r) var(--r) 0 var(--bd) #000,
+                0 0 0 var(--bd) red;
+  }
+  100% {
+    box-shadow: 0 calc((var(--r) + var(--bd)) * -2) 0 var(--bd) #000,
+                calc((var(--r) + var(--bd)) * -2) 0px 0 var(--bd) #000,
+                0px calc((var(--r) + var(--bd)) * 2) 0 var(--bd) #000,
+                calc((var(--r) + var(--bd)) * 2) 0 0 var(--bd) green,
+                0 0 0 var(--bd) red;
+  }
+}
+</style>
+<div class="shadow-bd item"><div class="in">hover</div></div>
