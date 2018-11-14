@@ -27,11 +27,24 @@ body {
   height: 100px;
   background-color: #fff;
 }
+.round{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+}
 
+
+</style>
+
+<style>
 .shadow-edge {
   box-shadow: 0 8px 6px -6px black;
 }
+</style>
+<div class="shadow-edge item square"></div>
 
+<style>
 .shadow-3d{
   position: relative;
 }
@@ -53,7 +66,11 @@ body {
   left: auto;
 }
 
+</style>
+<div class="shadow-3d item rectangle"></div>
 
+
+<style>
 .shadow-3d2{
   position:relative;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -75,7 +92,20 @@ body {
   transform:skew(8deg) rotate(3deg);
 }
 </style>
-
-<div class="shadow-edge item square"></div>
-<div class="shadow-3d item rectangle"></div>
 <div class="shadow-3d2 item rectangle"></div>
+
+
+<style>
+.shadow-liti{
+  box-shadow:
+    1px 1px 0 0 rgba(0, 0, 0, .8),
+    2px 2px 0 0 rgba(0, 0, 0, .75),
+    3px 3px 0 0 rgba(0, 0, 0, .7),
+    4px 4px 0 0 rgba(0, 0, 0, .65),
+    5px 5px 0 0 rgba(0, 0, 0, .6);
+}
+</style>
+<div class="shadow-liti item rectangle"></div>
+
+
+

@@ -17,7 +17,7 @@ pre[class*="language-"]{
     height: 300px;
     border: 1px solid #eee;
     &.z-s{
-        height: 40px;
+        height: 60px;
     }
     &.z-m{
         height: auto;
@@ -25,6 +25,7 @@ pre[class*="language-"]{
 }
 
 main{
+    background: #fafafa;
     min-height: 100vh;
 }
 
@@ -56,7 +57,7 @@ article{
     display: flex;
     align-items: center;
     color: #fff;
-    padding: 4px 6px;
+    padding: 4px 8px;
     color: #fff;
 }
 .l{
