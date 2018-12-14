@@ -19,44 +19,42 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     margin: 20px;
-    border: 10px solid transparent;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 .item .in{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 8px;
 }
-.item:before {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    border-radius: 10px;
+
+.item.bgi{
+    padding: 6px;
 }
+
 </style>
 
 <style>
-.demo1:before{
+.demo1{
     background-image: linear-gradient(90deg, orange, red);
 }
 </style>
-<div class="item demo1">
-    <div class="in"></div>
+<div class="item demo1 bgi">
+    <div class="in">bgi</div>
 </div>
 
 <style>
-.demo2:before{
+.demo2{
     background-image: repeating-linear-gradient(-45deg,#cc2a2d,#cc2a2d 20px,#f2f2f2 20px,#f2f2f2 30px,#0e71bb 30px,#0e71bb 50px,#f2f2f2 50px,#f2f2f2 60px);
 }
 </style>
-<div class="item demo2">
-    <div class="in"></div>
+<div class="item demo2 bgi">
+    <div class="in">bgi</div>
 </div>
+
