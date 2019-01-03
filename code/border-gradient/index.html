@@ -5,13 +5,16 @@
     box-sizing: border-box;
 }
 
+html{
+    background: #ccc;
+}
+
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     height: 100vh;
-    background: #ccc;
 }
 
 .item{
@@ -58,3 +61,40 @@ body {
     <div class="in">bgi</div>
 </div>
 
+<style>
+.demo3 {
+    position: relative;
+    border: solid 6px transparent;
+}
+.demo3:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -6px;
+    border-radius: inherit;
+    background: linear-gradient(to right, red, orange);
+}
+</style>
+
+<div class="item demo3">
+    <div class="in">bgi, <br>body不能有background</div>
+</div>
+
+<style>
+.demo4 {
+    border-width: 6px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #743ad5, #d53a9d);
+    border-image-slice: 1;
+}
+
+
+</style>
+
+<div class="item demo4">
+    <div class="in">border-image不能有圆角</div>
+</div>
