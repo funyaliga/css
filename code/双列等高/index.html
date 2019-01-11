@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>双列等高</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .floor{
+        display: flex;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    .demo,
+    .code{
+        width: 50%;
+        flex: 1;
+        padding: 20px;
+    }
+    @media screen and (max-width: 640px){
+        .floor{
+            flex-direction: column;
+        }
+        .demo,
+        .code{
+            width: 100%;
+            padding: 12px;
+        }
+        .demo{
+            border-right: none;
+            border-bottom: 1px solid #ddd;
+        }
+    }
+    .demo{
+        border-right: 1px solid #ddd;
+    }
+    .code{
+        font-size: 13px;
+    }
+    .container{
+        width: 100%;
+    }
+    .left,
+    .right{
+        width: 50%;
+        color: #fff;
+        padding: 8px;
+    }
+    .left{
+        background: #563672;
+    }
+    .right{
+        background: #c6427b;
+    }
+
+    h2{
+        margin-bottom: 8px;
+    }
+
+    .demo1.container{
+        display: flex;
+        align-items: stretch;
+    }
+    .demo1.container div{
+        flex: 1;
+    }
+
+    .demo2.container{
+        overflow: hidden;
+    }
+    .demo2.container div{
+        float: left;
+        padding-bottom: 5000px;
+	    margin-bottom: -5000px;
+    }
+
+    .demo3.container{
+        background-image: linear-gradient(90deg, #563672 50%, #c6427b 0);
+        overflow: hidden;
+    }
+    .demo3.container div{
+        float: left;
+        background: transparent;
+    }
+    .demo4.container{
+        display: table;
+    }
+    .demo4.container div{
+        display: table-cell;
+    }
+    </style>
+</head>
+<body>
+    <div class="floor">
+        <div class="demo">
+            <h2>display: flex</h2>
+            <div class="container demo1">
+                <div class="left">我是一行高</div>
+                <div class="right">我是多行高<br>我是多行高<br>我是多行高<br>我是多行高<br>我是多行高</div>
+            </div>
+        </div>
+        <div class="code">
+            <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="left"&gt;
+    &lt;div class="right"&gt;
+&lt;/div&gt;</code></pre>
+            <pre><code class="language-css">.container { display: flex; align-items: stretch; }</code></pre>
+        </div>
+    </div>
+
+    <div class="floor">
+        <div class="demo">
+            <h2>正负 margin 与 padding</h2>
+            <div class="container demo2">
+                <div class="left">我是一行高</div>
+                <div class="right">我是多行高<br>我是多行高<br>我是多行高<br>我是多行高<br>我是多行高</div>
+            </div>
+        </div>
+        <div class="code">
+            <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="left"&gt;
+    &lt;div class="right"&gt;
+&lt;/div&gt;</code></pre>
+            <pre><code class="language-css">.container{ overflow: hidden; }
+.left, .right{
+    float: left;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+}</code></pre>
+        </div>
+    </div>
+
+    <div class="floor">
+        <div class="demo">
+            <h2>线性渐变背景</h2>
+            <div class="container demo3">
+                <div class="left">我是一行高</div>
+                <div class="right">我是多行高<br>我是多行高<br>我是多行高<br>我是多行高<br>我是多行高</div>
+            </div>
+        </div>
+        <div class="code">
+            <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="left"&gt;
+    &lt;div class="right"&gt;
+&lt;/div&gt;</code></pre>
+            <pre><code class="language-css">.container{
+    background-image: linear-gradient(90deg, #563672 50%, #c6427b 0);
+}</code></pre>
+        </div>
+    </div>
+
+    <div class="floor">
+        <div class="demo">
+            <h2>display: table-cell</h2>
+            <div class="container demo4">
+                <div class="left">我是一行高</div>
+                <div class="right">我是多行高<br>我是多行高<br>我是多行高<br>我是多行高<br>我是多行高</div>
+            </div>
+        </div>
+        <div class="code">
+            <pre><code class="language-html">&lt;div class="container"&gt;
+    &lt;div class="left"&gt;
+    &lt;div class="right"&gt;
+&lt;/div&gt;</code></pre>
+            <pre><code class="language-css">.container{ display: table; }
+.left, .right{ display: table-cell; }</code></pre>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="../../lib/prism.css">
+    <script src="../../lib/prism.js"></script>
+</body>
+</html>
