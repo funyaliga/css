@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .demo{
+      position: relative;
+      height: 400px;
+      margin-bottom: 10px;
+      background: url(../../img/x.jpg) no-repeat center;
+      background-size: cover;
+      overflow: hidden;
+    }
+    h4{
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+  
+  <style>
+    .demo1 .overlay{
+      pointer-events: auto;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      top: 0px;
+      left: 0px;
+      z-index: 1000;
+      background-color: rgba(0, 0, 0, 0.5);
+      mix-blend-mode: hard-light;
+      overflow: hidden;
+    }
+    .demo1 .spotlight{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 120px;
+      height: 120px;
+      transform: translate3d(-50%, -50%, 0);
+      background-color: gray;
+      border-radius: 8px;
+      pointer-events: auto;
+      z-index: 1001;
+    }
+  </style>
+
+  <h4>demo1, mix-blend-mode: hard-light</h4>
+  <div class="demo demo1">
+    <div class="overlay">
+      <div class="spotlight"></div>
+    </div>
+  </div>
+
+  <style>
+    .demo2 .overlay{
+      pointer-events: auto;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      top: 0px;
+      left: 0px;
+      z-index: 1000;
+      overflow: hidden;
+    }
+    .demo2 .spotlight{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+      pointer-events: auto;
+      transform: translate3d(-50%, -50%, 0);
+      box-shadow: 0 0 0 9999px rgba(0, 0, 0, .5);
+      z-index: 1001;
+    }
+  </style>
+
+  <h4>demo2, box-shadow</h4>
+  <div class="demo demo2">
+    <div class="overlay">
+      <div class="spotlight"></div>
+    </div>
+  </div>
+
+</body>
+</html>
